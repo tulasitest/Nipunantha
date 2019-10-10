@@ -38,6 +38,7 @@ public class CustomerProfileFragment extends Fragment {
     TextView txt_pincode;
     ImageView imageView;
     String fname, lname, email, mobile_no, state, city, area, image;
+    private SharedPreferences pref;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,7 +56,7 @@ public class CustomerProfileFragment extends Fragment {
         txt_pincode = (TextView) view.findViewById(R.id.txt_pincode);
         imageView = (ImageView) view.findViewById(R.id.img_profile);
 
-        SharedPreferences pref = getActivity().getSharedPreferences(
+         pref = getActivity().getSharedPreferences(
                 "MyPref", 0);
 
         final int uid = pref.getInt("uid", 0);
@@ -141,6 +142,8 @@ public class CustomerProfileFragment extends Fragment {
                             String user_active = response.body().getResult().getUser_active();
                             String created = response.body().getResult().getCreated();
                             String updated = response.body().getResult().getUpdated();
+                            SharedPreferences.Editor editor = pref.edit();
+
                             String profilename = fname + "." + lname;
                             txt_profilename.setText(profilename);
                             txt_email.setText(email);
@@ -153,6 +156,14 @@ public class CustomerProfileFragment extends Fragment {
                                     .override(290, 200)
                                     .into(imageView);
 
+                           editor.putString("firstname", fname);
+                            editor.putString("lastname", lname);
+                            editor.putString("email", email);
+                            editor.putString("mobileno", mobile_no);
+                            editor.putString("state", state);
+                            editor.putString("city", city);
+                            editor.putString("area", area);
+                            editor.apply();
 
                         } else {
                             Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
