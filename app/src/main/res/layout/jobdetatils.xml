@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/Scrollview_Style">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/_14sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_55ssp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Summery"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp"
+                    >
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_black_24dp">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/txt_jobsummery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Summery"
+                    android:layout_weight="0.3"
+                    android:layout_marginLeft="@dimen/_8ssp"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp">
+                </TextView>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_55ssp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Details"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp"
+                    >
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_black_24dp">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/txt_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Summery"
+                    android:layout_weight="0.3"
+                    android:layout_marginLeft="@dimen/_8ssp"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_55ssp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Start date"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp"
+                    >
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_black_24dp">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/txt_startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Summery"
+                    android:layout_weight="0.3"
+                    android:layout_marginLeft="@dimen/_8ssp"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_55ssp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Date"
+                    android:layout_weight="0.2"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp"
+                    >
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_black_24dp">
+
+                </ImageView>
+                <TextView
+                    android:id="@+id/txt_createdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Summery"
+                    android:layout_weight="0.3"
+                    android:layout_marginLeft="@dimen/_8ssp"
+                    android:textColor="@color/jet_black1"
+                    android:textSize="@dimen/_14ssp">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

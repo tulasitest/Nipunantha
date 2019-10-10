@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_headersno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:text="S.No"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txt_headerjobtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/_18ssp"
+                android:text="Job Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp">
+            </TextView>
+            <TextView
+                android:id="@+id/txt_headertiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_18ssp"
+                android:text="Timing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_headerstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_2ssp"
+                android:layout_marginLeft="@dimen/_18ssp"
+                android:text=" Status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_headeraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_2ssp"
+                android:layout_marginLeft="@dimen/_18ssp"
+                android:text=" Action"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp">
+
+            </TextView>
+
+        </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

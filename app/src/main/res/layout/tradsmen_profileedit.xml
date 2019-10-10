@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/Scrollview_Style">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    >
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_newimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/black70"
+                        android:gravity="center"
+                        android:minHeight="@dimen/_30sdp"
+                        android:text="Upload New Image"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_12sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:id="@+id/txt_email"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="First Name   : "
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:hint="First Name"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_12ssp"
+
+                        android:text="Last  Name   : "
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:hint="Last Name"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="Email   : "
+                        android:textSize="@dimen/_12ssp"
+
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:hint="Email"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="Mobile Number   : "
+                        android:textSize="@dimen/_12ssp"
+
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_mobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:hint="Mobile Number"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:inputType="number"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="Number of Employee   : "
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputnoofemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:hint="Number of Employee"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:inputType="number"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="State  *"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Spinner
+                        android:id="@+id/spnr_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="City/District *"
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Spinner
+                        android:id="@+id/input_spinnercity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="Primary Trade  *"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Spinner
+                        android:id="@+id/spnr_primarytrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+
+                        android:background="@drawable/bordersskyblueedit"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="Area * "
+                        android:textSize="@dimen/_12ssp"
+
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:hint="Area"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_4ssp"
+                        android:gravity="center_vertical"
+                        android:text="Pincode  *"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="#af41aa"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:hint="Pincode"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@drawable/bordersskyblueedit"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:imeOptions="actionNext"
+                        android:textSize="@dimen/_12ssp" />
+                    <Button
+                        android:id="@+id/btn_profilesave"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/profileedit"
+                        android:text="PROFILE SAVE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

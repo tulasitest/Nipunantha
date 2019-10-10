@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txt_sno"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/table_cantent_cell_bg"
+        android:text="s.no"
+        android:textStyle="bold"
+        android:layout_weight="0.2"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txt_jobtype"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.2"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/table_cantent_cell_bg"
+        android:text="sushumit "
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txt_timing"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/table_cantent_cell_bg"
+        android:text="Year"
+        android:layout_weight="0.2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/llstatus"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/table_cantent_cell_bg"
+        >
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:background="@color/colorPrimaryDark"
+            android:text="View Job Status"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llaction"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/table_cantent_cell_bg">
+        <TextView
+            android:id="@+id/txt_action"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Action"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+        <ImageView
+            android:id="@+id/img_action"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:scaleType="center"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:tint="#4878ff"
+            android:src="@drawable/ic_visibility_black_24dp"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

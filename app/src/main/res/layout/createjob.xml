@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/Scrollview_Style"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:visibility="gone"
+            android:text="Selet the service what your looking for"
+            android:textSize="@dimen/_14ssp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/input_focused"
+        android:layout_weight="1"
+        >
+        <Spinner
+            android:id="@+id/spnr_services"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:paddingEnd="@dimen/_minus5sdp" />
+    </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_jobtype">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:background="@drawable/input_focused"
+            android:layout_weight="1"
+            >
+            <Spinner
+                android:id="@+id/spnr_jobtype"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:paddingEnd="@dimen/_minus5sdp" />
+
+        </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:orientation="vertical"
+            android:id="@+id/ll_timeperiod"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:background="@drawable/input_focused"
+            android:layout_weight="1"
+            >
+            <Spinner
+                android:id="@+id/spnr_timeperiod"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_37sdp"
+                android:paddingEnd="@dimen/_minus5sdp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jobDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Timing"
+                    android:textSize="@dimen/_14ssp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rediogroup"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:buttonTint="@color/jet_black"
+                        android:checked="true"
+                        android:text="ASAP" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/jet_black"
+                        android:text="For Quotation" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Job Summary"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/input_jobSummary"
+                style="@style/input_longtext"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:hint="Eg: Repair Washing Mashine"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Job Details"
+                android:textSize="@dimen/_14ssp" />
+
+            <EditText
+                android:id="@+id/input_jobDetails"
+                style="@style/input_longtext"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:hint="Explain the Problem or What needs to be done"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:background="@drawable/button_touch_inner"
+                android:padding="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:text="Create Job"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
