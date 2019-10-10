@@ -64,6 +64,9 @@ public class CustomerRecentJobsAdapter extends RecyclerView.Adapter<CustomerRece
 
         } else {
             rowPos=rowPos-1;
+            holder.txt_sno.setBackgroundResource(R.drawable.table_cantent_cell_bg);
+            holder.txt_jobtype.setBackgroundResource(R.drawable.table_cantent_cell_bg);
+            holder.txt_timing.setBackgroundResource(R.drawable.table_cantent_cell_bg);
             holder.txt_sno.setText(String.valueOf(rowPos+1));
             holder.txt_jobtype.setText(arrayList.get(rowPos).getJob_type());
             holder.txt_action.setVisibility(View.GONE);

@@ -63,6 +63,10 @@ public class TradsmenjobsAdapter extends RecyclerView.Adapter<TradsmenjobsAdapte
             holder.txt_action.setTextColor(Color.BLACK);
         } else {
             rowPos = rowPos - 1;
+            holder.txt_sno.setBackgroundResource(R.drawable.table_cantent_cell_bg);
+            holder.txt_customer.setBackgroundResource(R.drawable.table_cantent_cell_bg);
+            holder.txt_jobtype.setBackgroundResource(R.drawable.table_cantent_cell_bg);
+            holder.txt_timing.setBackgroundResource(R.drawable.table_cantent_cell_bg);
             holder.txt_sno.setText(String.valueOf(rowPos + 1));
             holder.txt_customer.setText(arrayList.get(rowPos).getName());
             holder.txt_jobtype.setText(arrayList.get(rowPos).getService());
