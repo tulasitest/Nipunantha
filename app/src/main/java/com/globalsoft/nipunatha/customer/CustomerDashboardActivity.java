@@ -138,7 +138,7 @@ public class CustomerDashboardActivity extends AppCompatActivity  implements Nav
         //initializing the fragment object which is selected
         switch (itemId) {
             case R.id.nav_dashboard:
-                Fragment fragment1= new Customercreatejob();
+                Fragment fragment1= new Createjobexpand();
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.content_frame, fragment1);
           //      transaction.addToBackStack(null);

@@ -32,7 +32,7 @@ public interface CustomerregisterInterface {
     @FormUrlEncoded
     Call<statesbean> CustomerLogin(@Field("appId") String appid, @Field("appKey") String appKey);
 
-    @POST("services")
+    @POST("servicesJobtypes")
     @FormUrlEncoded
     Call<tradsmenprimarytrades> servicestradsmenregister(@Field("appId") String appid, @Field("appKey") String appKey);
 
